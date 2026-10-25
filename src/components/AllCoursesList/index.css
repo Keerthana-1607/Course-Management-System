@@ -1,0 +1,276 @@
+/* =========================
+   COURSES PAGE
+========================= */
+
+.courses-page {
+    width: 100%;
+    min-height:100vh;
+    margin:0px auto;
+    padding: 35px 40px 60px;
+    box-sizing: border-box;
+    background-color: #09090f;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* =========================
+   ADD COURSE BUTTON
+========================= */
+
+.add-course-btn {
+    display: block;
+    margin-left: auto;
+    margin-bottom: 28px;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: #8038ed;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.add-course-btn:hover {
+    background-color: #6d28d9;
+}
+
+/* =========================
+   COURSE LIST
+========================= */
+
+.course-list {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* =========================
+   SLIDER OVERLAY
+========================= */
+
+.slider-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2000;
+}
+
+/* =========================
+   ADD COURSE PANEL
+========================= */
+
+.course-slider {
+    width: 430px;
+    max-width: 100%;
+    height: 100%;
+    padding: 28px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    background-color: #141420;
+    border-left: 1px solid #393148;
+}
+
+/* =========================
+   SLIDER HEADER
+========================= */
+
+.slider-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #393148;
+}
+
+.slider-header h2 {
+    margin: 0;
+    color: white;
+    font-size: 23px;
+}
+
+/* =========================
+   CLOSE BUTTON
+========================= */
+
+.close-btn {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #393148;
+    border-radius: 8px;
+    background-color: #211a30;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    background-color: #39234f;
+}
+
+/* =========================
+   FORM FIELDS
+========================= */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #d6d1e2;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    min-height: 43px;
+    padding: 10px 12px;
+    box-sizing: border-box;
+    border: 1px solid #414158;
+    border-radius: 7px;
+    outline: none;
+    background-color: #1d1d2c;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #9994aa;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: #9147ff;
+}
+
+.form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* =========================
+   SAVE COURSE BUTTON
+========================= */
+
+.save-course-btn {
+    width: 100%;
+    min-height: 44px;
+    padding: 12px 16px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 8px;
+    background-color: #8038ed;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.save-course-btn:hover {
+    background-color: #6d28d9;
+}
+
+/* =========================
+   LAPTOP
+========================= */
+
+@media screen and (max-width: 1200px) {
+    .courses-page {
+        padding: 30px 28px 50px;
+    }
+
+    .course-list {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 20px;
+    }
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media screen and (max-width: 900px) {
+    .courses-page {
+        padding: 26px 22px 45px;
+    }
+
+    .course-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media screen and (max-width: 600px) {
+    .courses-page {
+        padding: 22px 16px 35px;
+    }
+
+    .course-list {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .add-course-btn {
+        width: 100%;
+        margin-bottom: 22px;
+    }
+
+    .course-slider {
+        width: 100%;
+        padding: 24px 20px;
+    }
+
+    .slider-header h2 {
+        font-size: 21px;
+    }
+
+    .form-group {
+        margin-bottom: 17px;
+    }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media screen and (max-width: 380px) {
+    .courses-page {
+        padding: 18px 12px 30px;
+    }
+
+    .course-slider {
+        padding: 20px 16px;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        font-size: 13px;
+    }
+}

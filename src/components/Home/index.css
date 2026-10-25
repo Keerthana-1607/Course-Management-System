@@ -1,0 +1,654 @@
+
+/* =========================
+   HOME PAGE
+========================= */
+
+.home-page {
+    min-height: 100vh;
+    background-color: #09090f;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero-section {
+    min-height: 530px;
+    padding: 65px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 45px;
+    background-color: #0e0c18;
+}
+
+.hero-content {
+    max-width: 620px;
+}
+
+.welcome-text {
+    margin-bottom: 18px;
+    color: #b794ff;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.hero-content h1 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 58px;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.hero-content h1 span {
+    color: #a875ff;
+}
+
+.hero-description {
+    max-width: 570px;
+    margin: 22px 0;
+    color: #b7b3c8;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Hero Buttons */
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 25px;
+}
+
+.primary-button,
+.secondary-button {
+    padding: 13px 22px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.primary-button {
+    border: none;
+    background-color: #8038ed;
+    color: white;
+}
+
+.primary-button:hover {
+    background-color: #6d28d9;
+}
+
+.secondary-button {
+    border: 1px solid #554469;
+    background-color: transparent;
+    color: white;
+}
+
+.secondary-button:hover {
+    background-color: #242032;
+}
+
+.hero-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-top: 27px;
+    color: #c8c2d8;
+    font-size: 13px;
+}
+
+/* =========================
+   HERO VISUAL
+========================= */
+
+.hero-visual {
+    position: relative;
+    width: 360px;
+    height: 320px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-card {
+    width: 270px;
+    padding: 38px 20px;
+    text-align: center;
+    background-color: #191526;
+    border: 1px solid #45315f;
+    border-radius: 18px;
+}
+
+.hero-card-icon {
+    margin-bottom: 15px;
+    font-size: 52px;
+}
+
+.main-card h3 {
+    margin: 0 0 10px;
+    color: white;
+    font-size: 23px;
+}
+
+.main-card p {
+    margin: 0;
+    color: #b7b3c8;
+    font-size: 14px;
+}
+
+.floating-card {
+    position: absolute;
+    padding: 12px 15px;
+    border: 1px solid #49365e;
+    border-radius: 9px;
+    background-color: #211a30;
+    color: #e7dcff;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.card-one {
+    top: 25px;
+    right: 0;
+}
+
+.card-two {
+    bottom: 25px;
+    left: 0;
+}
+
+/* =========================
+   STATISTICS
+========================= */
+
+.stats-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 8%;
+    padding: 32px 0;
+    border-bottom: 1px solid #30283f;
+}
+
+.stat-item {
+    text-align: center;
+    border-right: 1px solid #30283f;
+}
+
+.stat-item:last-child {
+    border-right: none;
+}
+
+.stat-item h2 {
+    margin: 0;
+    color: #b794ff;
+    font-size: 30px;
+}
+
+.stat-item p {
+    margin: 8px 0 0;
+    color: #aaa4bd;
+    font-size: 14px;
+}
+
+/* =========================
+   COMMON SECTIONS
+========================= */
+
+.recommended-section,
+.why-section,
+.journey-section {
+    padding: 65px 8%;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.section-label {
+    margin: 0 0 10px;
+    color: #b794ff;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.section-heading h2,
+.section-title-center h2 {
+    margin: 0;
+    color: white;
+    font-size: 32px;
+}
+
+.section-heading p:not(.section-label),
+.section-title-center > p:last-child {
+    margin-top: 12px;
+    color: #aaa4bd;
+    line-height: 1.7;
+}
+
+.view-all-button {
+    flex-shrink: 0;
+    padding: 10px 15px;
+    border: 1px solid #49365e;
+    border-radius: 7px;
+    background-color: transparent;
+    color: #c5a5ff;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.view-all-button:hover {
+    background-color: #211a30;
+}
+
+/* =========================
+   RECOMMENDED COURSES
+========================= */
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.recommended-card {
+    min-width: 0;
+    overflow: hidden;
+    background-color: #151320;
+    border: 1px solid #30283f;
+    border-radius: 12px;
+}
+
+.recommended-card:hover {
+    border-color: #7951ad;
+}
+
+.course-icon {
+    height: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #211a30;
+    font-size: 48px;
+}
+
+.course-card-content {
+    padding: 18px;
+}
+
+.course-card-content h3 {
+    margin: 0;
+    color: white;
+    font-size: 17px;
+}
+
+.course-description {
+    min-height: 63px;
+    margin: 12px 0;
+    color: #aaa4bd;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.course-meta {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 15px 0;
+    color: #c5a5ff;
+    font-size: 12px;
+}
+
+.course-button {
+    width: 100%;
+    padding: 11px;
+    border: none;
+    border-radius: 7px;
+    background-color: #8038ed;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.course-button:hover {
+    background-color: #6d28d9;
+}
+
+/* =========================
+   WHY CHOOSE US
+========================= */
+
+.why-section {
+    background-color: #0e0c18;
+}
+
+.section-title-center {
+    max-width: 650px;
+    margin: 0 auto 35px;
+    text-align: center;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.benefit-card {
+    padding: 25px 18px;
+    text-align: center;
+    background-color: #151320;
+    border: 1px solid #30283f;
+    border-radius: 12px;
+}
+
+.benefit-card:hover {
+    border-color: #7951ad;
+}
+
+.benefit-icon {
+    width: 55px;
+    height: 55px;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background-color: #29203d;
+    font-size: 25px;
+}
+
+.benefit-card h3 {
+    margin: 0 0 10px;
+    color: white;
+    font-size: 16px;
+}
+
+.benefit-card p {
+    margin: 0;
+    color: #aaa4bd;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+/* =========================
+   LEARNING JOURNEY
+========================= */
+
+.journey-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.journey-item {
+    padding: 20px;
+    background-color: #151320;
+    border: 1px solid #30283f;
+    border-radius: 10px;
+}
+
+.journey-number {
+    margin-bottom: 15px;
+    color: #b794ff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.journey-item h3 {
+    margin: 0 0 10px;
+    color: white;
+    font-size: 16px;
+}
+
+.journey-item p {
+    margin: 0;
+    color: #aaa4bd;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+/* =========================
+   FINAL CTA
+========================= */
+
+.cta-section {
+    margin: 15px 8% 55px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    background-color: #191426;
+    border: 1px solid #49365e;
+    border-radius: 15px;
+}
+
+.cta-section h2 {
+    margin: 0;
+    color: white;
+    font-size: 29px;
+}
+
+.cta-section p {
+    margin: 12px 0 0;
+    color: #b7b3c8;
+    line-height: 1.7;
+}
+
+.cta-section button {
+    flex-shrink: 0;
+    padding: 13px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #8038ed;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cta-section button:hover {
+    background-color: #6d28d9;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media screen and (max-width: 1000px) {
+    .hero-section {
+        padding: 50px 5%;
+        gap: 25px;
+    }
+
+    .hero-content h1 {
+        font-size: 44px;
+    }
+
+    .hero-visual {
+        width: 300px;
+    }
+
+    .course-grid,
+    .benefits-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .journey-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .recommended-section,
+    .why-section,
+    .journey-section {
+        padding: 55px 5%;
+    }
+
+    .stats-section {
+        margin: 0 5%;
+    }
+
+    .cta-section {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media screen and (max-width: 700px) {
+    .hero-section {
+        min-height: auto;
+        padding: 45px 22px;
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+    }
+
+    .hero-buttons,
+    .hero-features {
+        justify-content: center;
+    }
+
+    .hero-visual {
+        width: 100%;
+        max-width: 340px;
+        height: 280px;
+    }
+
+    .main-card {
+        width: 240px;
+        padding: 30px 15px;
+    }
+
+    .card-one {
+        right: 0;
+    }
+
+    .card-two {
+        left: 0;
+    }
+
+    .stats-section {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 25px 0;
+        margin: 0 20px;
+        padding: 28px 0;
+    }
+
+    .stat-item:nth-child(2) {
+        border-right: none;
+    }
+
+    .stat-item:nth-child(3) {
+        border-right: 1px solid #30283f;
+    }
+
+    .stat-item h2 {
+        font-size: 25px;
+    }
+
+    .section-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .section-heading h2,
+    .section-title-center h2 {
+        font-size: 27px;
+    }
+
+    .recommended-section,
+    .why-section,
+    .journey-section {
+        padding: 45px 20px;
+    }
+
+    .course-grid,
+    .benefits-grid,
+    .journey-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .course-description {
+        min-height: auto;
+    }
+
+    .cta-section {
+        margin: 10px 20px 35px;
+        padding: 28px 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cta-section h2 {
+        font-size: 25px;
+    }
+
+    .cta-section button {
+        width: 100%;
+    }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media screen and (max-width: 400px) {
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .primary-button,
+    .secondary-button {
+        width: 100%;
+    }
+
+    .hero-features {
+        gap: 10px;
+        font-size: 12px;
+    }
+
+    .floating-card {
+        padding: 10px;
+        font-size: 11px;
+    }
+
+    .section-heading h2,
+    .section-title-center h2 {
+        font-size: 24px;
+    }
+}

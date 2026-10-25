@@ -1,0 +1,95 @@
+.my-courses-page {
+    width: 100%;
+    min-height: 100vh;
+    padding: 40px 5%;
+    box-sizing: border-box;
+    background-color: #09090f;
+    color: #ffffff;
+}
+
+/* Page heading */
+.my-courses-title {
+    margin: 0 0 35px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+/* Courses container */
+.my-courses-list {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Empty message */
+.no-courses {
+    text-align: center;
+    margin-top: 80px;
+    font-size: 22px;
+    font-weight: 500;
+    color: #b8b8c9;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .my-courses-page {
+        padding: 35px 4%;
+    }
+
+    .my-courses-title {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .no-courses {
+        margin-top: 70px;
+        font-size: 20px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+    .my-courses-page {
+        padding: 25px 4%;
+    }
+
+    .my-courses-title {
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+
+    .no-courses {
+        margin-top: 60px;
+        font-size: 18px;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 400px) {
+    .my-courses-page {
+        padding: 20px 3%;
+    }
+
+    .my-courses-title {
+        font-size: 23px;
+    }
+
+    .no-courses {
+        font-size: 16px;
+        margin-top: 50px;
+    }
+}

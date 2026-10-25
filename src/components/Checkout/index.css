@@ -1,0 +1,469 @@
+
+/* Checkout Page */
+
+.checkout-page {
+    width: 100%;
+    min-height: 100vh;
+    padding: 40px 5%;
+    box-sizing: border-box;
+    background-color: #09090f;
+}
+
+.checkout-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.checkout-title {
+    margin: 0 0 30px;
+    font-size: 32px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.checkout-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+/* Order Summary */
+
+.order-summary {
+    min-width: 0;
+    background-color: #141420;
+    border: 1px solid #29293b;
+    border-radius: 12px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.order-summary h2 {
+    margin: 0;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+/* Checkout Course Item */
+
+.checkout-course-item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 15px 0;
+    border-bottom: 1px solid #303044;
+}
+
+.checkout-course-item:last-child {
+    border-bottom: none;
+}
+
+.checkout-course-image {
+    width: 130px;
+    height: 80px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 8px;
+    background-color: #1c1c2b;
+}
+
+.checkout-course-details {
+    flex: 1;
+    min-width: 0;
+}
+
+.checkout-course-details h3 {
+    margin: 0 0 8px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.checkout-course-details p {
+    margin: 4px 0;
+    font-size: 14px;
+    color: #b8b8c9;
+}
+
+.checkout-course-details p:nth-of-type(1) {
+    color: #f5b82e;
+    font-weight: 500;
+}
+
+.checkout-course-details p:nth-of-type(2) {
+    color: #b98aff;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* Price Details */
+
+.checkout-price {
+    min-width: 0;
+    background-color: #141420;
+    border: 1px solid #29293b;
+    border-radius: 12px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.checkout-price h2 {
+    margin: 0 0 25px;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.checkout-price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+    color: #b8b8c9;
+}
+
+.checkout-price-row p {
+    margin: 0;
+    font-size: 15px;
+}
+
+.checkout-price-row p:last-child {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* Total */
+
+.checkout-total-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    border-top: 1px solid #303044;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.checkout-total-row h3 {
+    margin: 0;
+    font-size: 17px;
+    color: #ffffff;
+}
+
+.checkout-total-row h3:last-child {
+    color: #b98aff;
+    font-size: 20px;
+}
+
+/* Pay Button */
+
+.pay-button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 13px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 8px;
+    background-color: #8038ed;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.pay-button:hover:not(:disabled) {
+    background-color: #6928d0;
+}
+
+.pay-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Tablet */
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .checkout-page {
+        padding: 35px 4%;
+    }
+
+    .checkout-title {
+        font-size: 28px;
+    }
+
+    .checkout-content {
+        gap: 20px;
+    }
+
+    .order-summary,
+    .checkout-price {
+        padding: 20px;
+    }
+
+    .checkout-course-item {
+        gap: 15px;
+    }
+
+    .checkout-course-image {
+        width: 115px;
+        height: 72px;
+    }
+
+    .checkout-course-details h3 {
+        font-size: 16px;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+    .checkout-page {
+        padding: 25px 4%;
+    }
+
+    .checkout-title {
+        font-size: 26px;
+        margin-bottom: 25px;
+    }
+
+    .checkout-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .order-summary,
+    .checkout-price {
+        padding: 18px;
+    }
+
+    .checkout-price-row p {
+        font-size: 14px;
+    }
+
+    .checkout-total-row h3 {
+        font-size: 16px;
+    }
+
+    .checkout-total-row h3:last-child {
+        font-size: 18px;
+    }
+
+    .pay-button {
+        padding: 12px;
+    }
+
+    .checkout-course-item {
+        gap: 14px;
+        padding: 14px 0;
+    }
+
+    .checkout-course-image {
+        width: 100px;
+        height: 65px;
+    }
+
+    .checkout-course-details h3 {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    .checkout-course-details p {
+        font-size: 13px;
+    }
+
+    .checkout-course-details p:nth-of-type(2) {
+        font-size: 14px;
+    }
+}
+
+/* Small Mobile */
+
+@media (max-width: 400px) {
+    .checkout-page {
+        padding: 20px 3%;
+    }
+
+    .checkout-title {
+        font-size: 23px;
+    }
+
+    .order-summary,
+    .checkout-price {
+        padding: 15px;
+    }
+
+    .checkout-price h2,
+    .order-summary h2 {
+        font-size: 20px;
+    }
+
+    .checkout-course-item {
+        gap: 10px;
+    }
+
+    .checkout-course-image {
+        width: 85px;
+        height: 58px;
+    }
+
+    .checkout-course-details h3 {
+        font-size: 14px;
+    }
+
+    .checkout-course-details p {
+        font-size: 12px;
+    }
+}
+
+/* Payment Success */
+
+.payment-success-page {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 5%;
+    box-sizing: border-box;
+    background-color: #09090f;
+}
+
+.payment-success-box {
+    width: 100%;
+    max-width: 550px;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: #141420;
+    border: 1px solid #29293b;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.payment-success-box h1 {
+    margin: 0 0 20px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.payment-success-box h1 span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    border-radius: 50%;
+    background-color: #8038ed;
+    color: #ffffff;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.payment-success-box p {
+    margin: 12px 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #b8b8c9;
+}
+
+.payment-success-box p:nth-of-type(2) {
+    font-size: 18px;
+    font-weight: 600;
+    color: #b98aff;
+}
+
+.payment-success-box p:nth-of-type(3) {
+    margin-top: 18px;
+    padding: 10px;
+    background-color: #1c1c2b;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #b8b8c9;
+    word-break: break-word;
+}
+
+.my-courses-button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #8038ed;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.my-courses-button:hover {
+    background-color: #6928d0;
+}
+
+/* Payment Success Responsive */
+
+@media (max-width: 600px) {
+    .payment-success-page {
+        padding: 25px 20px;
+    }
+
+    .payment-success-box {
+        padding: 30px 20px;
+        border-radius: 10px;
+    }
+
+    .payment-success-box h1 {
+        font-size: 23px;
+        line-height: 1.4;
+    }
+
+    .payment-success-box h1 span {
+        width: 28px;
+        height: 28px;
+        font-size: 17px;
+        margin-right: 5px;
+    }
+
+    .payment-success-box p {
+        font-size: 14px;
+    }
+
+    .payment-success-box p:nth-of-type(2) {
+        font-size: 16px;
+    }
+
+    .payment-success-box p:nth-of-type(3) {
+        font-size: 13px;
+    }
+
+    .my-courses-button {
+        padding: 11px 16px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .payment-success-page {
+        padding: 20px 15px;
+    }
+
+    .payment-success-box {
+        padding: 25px 16px;
+    }
+
+    .payment-success-box h1 {
+        font-size: 20px;
+    }
+
+    .payment-success-box p {
+        font-size: 13px;
+    }
+
+    .my-courses-button {
+        font-size: 13px;
+    }
+}
